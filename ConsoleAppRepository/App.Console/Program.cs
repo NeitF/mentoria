@@ -77,8 +77,9 @@ public class ConsoleProgram
                           "6 - Simular grande carga de livros com Add Range\n" +
                           "7 - Simular atualização de grande quantia de registros com Bulk Update\n" +
                           "8 - Simular atualização de grande quantia de registros com Update Range\n" +
-                          "9 - Apagar todos os registros de livro com Bulk Delete\n" +
-                          "10 - Apagar todos os registros de livro com Remove Range\n" +
+                          "9 - Simular atualização de grande quantia de registros com Execute Update\n" +
+                          "10 - Apagar todos os registros de livro com Bulk Delete\n" +
+                          "11 - Apagar todos os registros de livro com Remove Range\n" +
                           "0 - Sair");
 
         Console.WriteLine(new string('=', 30));
@@ -183,6 +184,9 @@ public class ConsoleProgram
                 break;
             case OpcoesLivroMenuEnum.UpdateRangeLivro:
                 LivrosMethods.SimularUpdateRange();
+                break;
+            case OpcoesLivroMenuEnum.ExecuteUpdate:
+                LivrosMethods.SimularExecuteUpdate();
                 break;
             case OpcoesLivroMenuEnum.Sair:
                 Environment.Exit(0);

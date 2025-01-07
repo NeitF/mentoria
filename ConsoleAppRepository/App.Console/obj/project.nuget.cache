@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Kh8AKE7SQc=",
+  "dgSpecHash": "Flk8H4pJfOQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nafs2\\RiderProjects\\ConsoleAppRepository\\App.Console\\App.Console.csproj",
+  "projectFilePath": "C:\\Users\\nafs2\\Desktop\\Mentoria\\mentoria\\ConsoleAppRepository\\App.Console\\App.Console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nafs2\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\nafs2\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

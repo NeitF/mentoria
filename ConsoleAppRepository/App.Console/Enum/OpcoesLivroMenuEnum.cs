@@ -11,6 +11,7 @@ public enum OpcoesLivroMenuEnum
     AddRangeLivro = 6,
     BulkUpdateLivro = 7,
     UpdateRangeLivro = 8,
-    ApagarTodosLivrosBulkDelete = 9,
-    ApagarTodosLivrosRemoveRange = 10
+    ExecuteUpdate = 9,
+    ApagarTodosLivrosBulkDelete = 10,
+    ApagarTodosLivrosRemoveRange = 11
 }

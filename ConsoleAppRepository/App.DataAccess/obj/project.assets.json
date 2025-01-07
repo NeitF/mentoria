@@ -2625,11 +2625,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nafs2\\RiderProjects\\ConsoleAppRepository\\App.DataAccess\\App.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\nafs2\\Desktop\\Mentoria\\mentoria\\ConsoleAppRepository\\App.DataAccess\\App.DataAccess.csproj",
       "projectName": "App.DataAccess",
-      "projectPath": "C:\\Users\\nafs2\\RiderProjects\\ConsoleAppRepository\\App.DataAccess\\App.DataAccess.csproj",
+      "projectPath": "C:\\Users\\nafs2\\Desktop\\Mentoria\\mentoria\\ConsoleAppRepository\\App.DataAccess\\App.DataAccess.csproj",
       "packagesPath": "C:\\Users\\nafs2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nafs2\\RiderProjects\\ConsoleAppRepository\\App.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\nafs2\\Desktop\\Mentoria\\mentoria\\ConsoleAppRepository\\App.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nafs2\\AppData\\Roaming\\NuGet\\NuGet.Config",

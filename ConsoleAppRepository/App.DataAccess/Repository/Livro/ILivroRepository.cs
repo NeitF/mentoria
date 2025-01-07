@@ -8,6 +8,7 @@ public interface ILivroRepository : IRepository<Livro>
     void AddRange(List<Livro> livros);
     void BulkUpdate(List<Livro> livros);
     void UpdateRange(List<Livro> livros);
+    void ExecuteUpdate();
     void BulkDelete();
     void RemoveRange();
     Livro GetLivroPorTitulo(string nome);

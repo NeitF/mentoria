@@ -93,6 +93,14 @@ public class LivrosMethods
             bll.SimularUpdateRange();
         }
     }
+
+    public static void SimularExecuteUpdate()
+    {
+        using (var bll = new LivroBusinessLogic())
+        {
+            bll.SimularExecuteUpdate();
+        }
+    }
     
     #endregion
 

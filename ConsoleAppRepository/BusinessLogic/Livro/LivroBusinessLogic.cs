@@ -149,6 +149,15 @@ public class LivroBusinessLogic : IDisposable
         Console.WriteLine($"Método utilizado: UpdateRange\nA operação durou: {watch.ElapsedMilliseconds}");
         Console.ReadKey();
     }
+
+    public void SimularExecuteUpdate()
+    {
+        var watch = System.Diagnostics.Stopwatch.StartNew();
+        _unitOfWork.LivroRepository.ExecuteUpdate();
+        watch.Stop();
+        Console.WriteLine($"Método utilizado: ExecuteUpdate\nA operação durou: {watch.ElapsedMilliseconds}");
+        Console.ReadKey();
+    }
     #endregion
 
     #region Utils

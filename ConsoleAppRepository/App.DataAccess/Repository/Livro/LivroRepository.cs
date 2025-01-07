@@ -57,6 +57,12 @@ public class LivroRepository : Repository<Livro>, ILivroRepository
     {
         _context.UpdateRange(livros);
     }
+
+    public void ExecuteUpdate()
+    {
+        _context.Livros
+            .ExecuteUpdateAsync(x => x.SetProperty(x => x.Titulo, "Atualizado com ExecuteUpdate"));
+    }
     #endregion
     
 }
