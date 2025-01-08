@@ -27,3 +27,18 @@ C:\Users\nafs2\Desktop\Mentoria\mentoria\ConsoleAppRepository\App.DataAccess\obj
 C:\Users\nafs2\Desktop\Mentoria\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.pdb
 C:\Users\nafs2\Desktop\Mentoria\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.genruntimeconfig.cache
 C:\Users\nafs2\Desktop\Mentoria\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\ref\App.DataAccess.dll
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\bin\Debug\net8.0\App.DataAccess.deps.json
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\bin\Debug\net8.0\App.DataAccess.runtimeconfig.json
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\bin\Debug\net8.0\App.DataAccess.dll
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\bin\Debug\net8.0\App.DataAccess.pdb
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.csproj.AssemblyReference.cache
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.AssemblyInfoInputs.cache
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.AssemblyInfo.cs
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.sourcelink.json
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.dll
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\refint\App.DataAccess.dll
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.pdb
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\App.DataAccess.genruntimeconfig.cache
+C:\Users\nathan.silva\Desktop\Nova pasta\mentoria\ConsoleAppRepository\App.DataAccess\obj\Debug\net8.0\ref\App.DataAccess.dll

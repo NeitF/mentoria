@@ -12,4 +12,5 @@ public interface ILivroRepository : IRepository<Livro>
     void BulkDelete();
     void RemoveRange();
     Livro GetLivroPorTitulo(string nome);
+    List<string> GetExistingISBN(List<string> isbns);
 }

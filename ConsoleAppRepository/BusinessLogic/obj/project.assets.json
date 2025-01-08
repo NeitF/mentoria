@@ -1251,19 +1251,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nafs2\\.nuget\\packages\\": {}
+    "C:\\Users\\nathan.silva\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nafs2\\Desktop\\Mentoria\\mentoria\\ConsoleAppRepository\\BusinessLogic\\BusinessLogic.csproj",
+      "projectUniqueName": "C:\\Users\\nathan.silva\\Desktop\\Nova pasta\\mentoria\\ConsoleAppRepository\\BusinessLogic\\BusinessLogic.csproj",
       "projectName": "BusinessLogic",
-      "projectPath": "C:\\Users\\nafs2\\Desktop\\Mentoria\\mentoria\\ConsoleAppRepository\\BusinessLogic\\BusinessLogic.csproj",
-      "packagesPath": "C:\\Users\\nafs2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nafs2\\Desktop\\Mentoria\\mentoria\\ConsoleAppRepository\\BusinessLogic\\obj\\",
+      "projectPath": "C:\\Users\\nathan.silva\\Desktop\\Nova pasta\\mentoria\\ConsoleAppRepository\\BusinessLogic\\BusinessLogic.csproj",
+      "packagesPath": "C:\\Users\\nathan.silva\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nathan.silva\\Desktop\\Nova pasta\\mentoria\\ConsoleAppRepository\\BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nafs2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nathan.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1271,14 +1271,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\nafs2\\Desktop\\Mentoria\\mentoria\\ConsoleAppRepository\\App.DataAccess\\App.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\nafs2\\Desktop\\Mentoria\\mentoria\\ConsoleAppRepository\\App.DataAccess\\App.DataAccess.csproj"
+            "C:\\Users\\nathan.silva\\Desktop\\Nova pasta\\mentoria\\ConsoleAppRepository\\App.DataAccess\\App.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\nathan.silva\\Desktop\\Nova pasta\\mentoria\\ConsoleAppRepository\\App.DataAccess\\App.DataAccess.csproj"
             }
           }
         }
@@ -1313,7 +1314,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

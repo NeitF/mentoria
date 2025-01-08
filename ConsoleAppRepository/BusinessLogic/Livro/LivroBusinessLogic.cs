@@ -51,30 +51,32 @@ public class LivroBusinessLogic : IDisposable
     
     public void SimularBulkInsert()
     {
-        var (livros, isbns, registroRepetido, novosRegistros) = GerarDados();
-        
         var watch = System.Diagnostics.Stopwatch.StartNew();
+        var (livros, isbns, registroRepetido, novosRegistros) = GerarDados();
+        Console.WriteLine($"GERAÇÃO DOS DADOS: {watch.Elapsed.TotalSeconds}");
+        watch.Restart();
         _unitOfWork.LivroRepository.BulkInsert(livros);
         watch.Stop();
         
         Console.WriteLine($"IBNSs já cadastrados previamente: {registroRepetido}");
         Console.WriteLine($"Novos IBNSs cadastrados: {novosRegistros}");
-        Console.WriteLine($"Método utilizado: BulkInsert\nA operação durou: {watch.ElapsedMilliseconds}");
+        Console.WriteLine($"Método utilizado: BulkInsert\nA operação durou: {watch.Elapsed.TotalSeconds}");
         Console.ReadKey();
     }
     
     public void SimularAddRange()
     {
-        var (livros, isbns, registroRepetido, novosRegistros) = GerarDados();
-        
         var watch = System.Diagnostics.Stopwatch.StartNew();
+        var (livros, isbns, registroRepetido, novosRegistros) = GerarDados();
+        Console.WriteLine($"GERAÇÃO DOS DADOS: {watch.Elapsed.TotalSeconds}");
+        watch.Restart();
         _unitOfWork.LivroRepository.AddRange(livros);
         _unitOfWork.Commit();
         watch.Stop();
         
         Console.WriteLine($"IBNSs já cadastrados previamente: {registroRepetido}");
         Console.WriteLine($"Novos IBNSs cadastrados: {novosRegistros}");
-        Console.WriteLine($"Método utilizado: AddRange\nA operação durou: {watch.ElapsedMilliseconds}");
+        Console.WriteLine($"Método utilizado: AddRange\nA operação durou: {watch.Elapsed.TotalSeconds}");
         Console.ReadKey();
     }
     
@@ -92,7 +94,7 @@ public class LivroBusinessLogic : IDisposable
         var watch = System.Diagnostics.Stopwatch.StartNew();
         _unitOfWork.LivroRepository.BulkDelete();
         watch.Stop();
-        Console.WriteLine($"Método utilizado: BulkDelete\nA operação durou: {watch.ElapsedMilliseconds}");
+        Console.WriteLine($"Método utilizado: BulkDelete\nA operação durou: {watch.Elapsed.TotalSeconds}");
         Console.ReadKey();
     }
 
@@ -102,7 +104,7 @@ public class LivroBusinessLogic : IDisposable
         _unitOfWork.LivroRepository.RemoveRange();
         _unitOfWork.Commit();
         watch.Stop();
-        Console.WriteLine($"Método utilizado: RemoveRange\nA operação durou: {watch.ElapsedMilliseconds}");
+        Console.WriteLine($"Método utilizado: RemoveRange\nA operação durou: {watch.Elapsed.TotalSeconds}");
         Console.ReadKey();
     }
 
@@ -132,7 +134,8 @@ public class LivroBusinessLogic : IDisposable
         var watch = System.Diagnostics.Stopwatch.StartNew();
         _unitOfWork.LivroRepository.BulkUpdate(livros);
         watch.Stop();
-        Console.WriteLine($"Método utilizado: BulkUpdate\nA operação durou: {watch.ElapsedMilliseconds}");
+        Console.WriteLine($"Método utilizado: BulkUpdate\nA operação durou: {watch.Elapsed.TotalSeconds}");
+        Console.WriteLine($"Quantiade de livros atualizados: {livros.Count}");
         Console.ReadKey();
     }
     
@@ -146,7 +149,8 @@ public class LivroBusinessLogic : IDisposable
         _unitOfWork.LivroRepository.UpdateRange(livros);
         _unitOfWork.Commit();
         watch.Stop();
-        Console.WriteLine($"Método utilizado: UpdateRange\nA operação durou: {watch.ElapsedMilliseconds}");
+        Console.WriteLine($"Método utilizado: UpdateRange\nA operação durou: {watch.Elapsed.TotalSeconds}");
+        Console.WriteLine($"Quantiade de livros atualizados: {livros.Count}");
         Console.ReadKey();
     }
 
@@ -174,17 +178,18 @@ public class LivroBusinessLogic : IDisposable
         var registroRepetido = 0;
         var novosRegistros = 0;
         
+        
         for (int i = 0; i < 10000; i++)
         {
             var isbn = StringHelpers.GenerateRandomString(5);
             var titulo = StringHelpers.GenerateRandomString(10);
-            var isbnAlreadyAdded = _unitOfWork.LivroRepository.Get(x => x.ISBN == isbn).Any();
+            // var isbnAlreadyAdded = _unitOfWork.LivroRepository.Get(x => x.ISBN == isbn).Any();
 
-            if (isbnAlreadyAdded)
-            {
-                registroRepetido++;
-                continue;
-            }
+            // if (isbnAlreadyAdded)
+            // {
+            //     registroRepetido++;
+            //     continue;
+            // }
             
             livros.Add(new Livro()
             {
@@ -199,6 +204,20 @@ public class LivroBusinessLogic : IDisposable
             novosRegistros++;
         }
 
+        var existingIsbns = _unitOfWork.LivroRepository
+            .GetExistingISBN(livros.Select(x => x.ISBN).ToList());
+
+        if (existingIsbns.Count > 0)
+        {
+            var duplicatedLivrosIsbns = livros.Where(x => existingIsbns.Contains(x.ISBN)).ToList();
+
+            foreach (var livro in duplicatedLivrosIsbns)
+            {
+                livro.ISBN = $"{livro.ISBN}1";
+                registroRepetido++;
+            }
+        }
+        
         return (livros, isbns, registroRepetido, novosRegistros);
     }
     
